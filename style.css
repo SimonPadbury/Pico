@@ -1,0 +1,114 @@
+/*
+Theme Name: Pico
+Theme URI: https://github.com/SimonPadbury/Pico
+Author: Simon Padbury
+Author URI: https://github.com/SimonPadbury
+Description: Vanishingly lightweight, ultra minimal WordPress theme. It just works! Maybe useful this for starting out learning or teaching WordPress theme design.
+License: Unlicence
+Licence URI: http://unlicense.org
+Version: 1
+Text domain: pico
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell",
+    "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  text-rendering: optimizeLegibility; 
+}
+
+a {
+  color: #29c;
+}
+a:hover {
+  color: #38f;
+}
+
+body > header {
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+body > header h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+  float: left;
+}
+
+body > header nav ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  overflow: none;
+}
+
+body > header nav li {
+  display: inline-block;
+}
+
+body > header a {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+body > main {
+  clear: both;
+  max-width: 45rem;
+  margin: 4rem auto 0;
+  padding: 0 1rem;
+}
+
+hr {
+  height: 0;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+body > footer {
+  margin: 0;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Stick footer to bottom of window if webpage doesn't have much content */
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  padding-bottom: 6rem; /* Compensate for footer height */
+  min-height: 100%;
+}
+
+body > footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
