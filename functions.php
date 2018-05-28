@@ -9,8 +9,11 @@ add_action('init', 'pico_setup');
 
 // Stylesheet
 
-wp_register_style('styles', get_template_directory_uri() . '/style.css', false, null, null);
-wp_enqueue_style('styles');
+function pico_styles() {
+	wp_register_style('styles', get_template_directory_uri() . '/style.css', false, null, null);
+	wp_enqueue_style('styles');
+}
+add_action( 'wp_enqueue_scripts', 'pico_styles', 100);
 
 // Menu
 
